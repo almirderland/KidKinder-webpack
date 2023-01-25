@@ -1,0 +1,99 @@
+%flex-row-c-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-row-sb-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+%font-roboto {
+    font-family: "Handlee", cursive;
+}
+.CLASSES{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4{
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #17a2b8;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        font-family: "Nunito", sans-serif;
+    }
+    h3{
+        font-family: "Handlee", cursive;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #00394f;
+        margin: 10px;
+        font-size: 2.5rem;
+    }
+    .CLASSES-box{
+        @extend %flex-row-c-c;
+        width: 30%;
+        .CLASSES-box-itm{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            width: 380px;
+            margin: 20px;
+            img{
+                width: 350px;
+            }
+            button{
+                color: #fff;
+                background-color: #17a2b8;
+                border: 1px solid #17a2b8;
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: 30px;
+                height: 40px;
+            }
+            h4{
+                font-family: "Nunito", sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #666666;
+                margin: 10px;
+                text-align: center;
+
+            }
+            p{
+                font-family: "Nunito", sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #666666;
+                text-align: center;
+                margin: 10px;
+            }
+            table{
+                margin: 20px;
+                th{
+                    width: 150px;
+                    font-family: "Nunito", sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #666666;
+                    margin: 10px;
+                    border: 1px solid #666666;
+
+
+                } 
+            }
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+%flex-row-c-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-row-sb-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+%font-roboto {
+    font-family: "Handlee", cursive;
+}
+.section{
+    @extend %flex-row-c-c;
+    background-color: #17a2b8;
+    padding: 2% 5%;
+    .section-text{
+     h2{
+        font-size: 1.5rem;
+        color: white;
+        @extend %font-roboto;
+    }
+    h1{
+        font-weight: 700;
+        color: white;
+        font-size: 4.5rem;
+        line-height: 1.2;
+        @extend %font-roboto;
+    }
+    p{
+        font-family: "Nunito", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: white;
+        @extend %font-roboto;
+    }
+    button{
+        color: #fff;
+        background-color: #00394f;
+        border: 1px solid #00394f;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 30px;
+        height: 60px;
+        width: 180px;
+        margin-top: 30px;
+    }
+    }
+
+}
